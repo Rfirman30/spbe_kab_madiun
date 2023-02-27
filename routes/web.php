@@ -84,3 +84,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/navbarcontrol', function () {
     return view('admin.navbarcontrol.index');
 });
+
+Route::get('/manajemen', function () {
+    return view('admin.manajemen.index');
+});
