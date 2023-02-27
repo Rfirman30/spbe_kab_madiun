@@ -10,7 +10,7 @@
         <p>
             143 Kepala Desa di Kabupaten Madiun yang baru dilantik pada Rabu 
             (2/2) lalu, mengikuti Pendidikan dan Pelatihan Kepala Desa di 
-            Perhutani indah Forestry Institute. Pelaksanaan diklat yang diselenggarakan 
+            Perhutani Forestry Institute. Pelaksanaan diklat yang diselenggarakan 
             oleh Badan Kepegawaian Daerah Kabupaten Madiun akan berlangsung 
             selama lima hari mulai tanggal 7 sampai 11 Februari 2022.
         </p>
