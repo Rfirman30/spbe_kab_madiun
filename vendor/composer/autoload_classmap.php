@@ -28,6 +28,7 @@ return array(
     'App\\Http\\Middleware\\ValidateSignature' => $baseDir . '/app/Http/Middleware/ValidateSignature.php',
     'App\\Http\\Middleware\\VerifyCsrfToken' => $baseDir . '/app/Http/Middleware/VerifyCsrfToken.php',
     'App\\Models\\Berita' => $baseDir . '/app/Models/Berita.php',
+    'App\\Models\\Footer' => $baseDir . '/app/Models/Footer.php',
     'App\\Models\\Kebijakan' => $baseDir . '/app/Models/Kebijakan.php',
     'App\\Models\\Layanan' => $baseDir . '/app/Models/Layanan.php',
     'App\\Models\\Profil' => $baseDir . '/app/Models/Profil.php',
