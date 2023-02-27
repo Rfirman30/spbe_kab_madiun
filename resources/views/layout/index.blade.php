@@ -103,6 +103,21 @@
 <div class="clients-slider swiper">
 	<div class="swiper-wrapper align-items-center">
 		<div class="swiper-slide">
+			<a href="https://www.lapor.go.id/" target="_blank">
+			<img src="assets/img/clients/lapor.jpeg" class="img-fluid" alt="">
+			</a>
+		</div>
+		<div class="swiper-slide">
+			<a href="https://lpse.madiunkab.go.id/eproc4" target="_blank">
+			<img src="assets/img/clients/lpse.jpeg" class="img-fluid" alt="">
+			</a>
+		</div>
+		<div class="swiper-slide">
+			<a href="https://lpplpuroboyofmcaruban.blogspot.com/" target="_blank">
+			<img src="assets/img/clients/LOGO-1-GIF.gif" class="img-fluid" alt="">
+			</a>
+		</div>
+		{{-- <div class="swiper-slide">
 			<img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
 		</div>
 		<div class="swiper-slide">
@@ -113,18 +128,11 @@
 		</div>
 		<div class="swiper-slide">
 			<img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
-		</div>
+		</div> --}}
 		<div class="swiper-slide">
+			<a href="https://www.kominfo.go.id/" target="_blank">
 			<img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
-		</div>
-		<div class="swiper-slide">
-			<img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
-		</div>
-		<div class="swiper-slide">
-			<img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
-		</div>
-		<div class="swiper-slide">
-			<img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
+			</a>
 		</div>
 	</div>
 </div>
