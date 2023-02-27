@@ -13,6 +13,6 @@ class Tatakelola extends Model
 
     protected $fillable = [
         'nama',
-        'file'
+        'file',
     ];
 }

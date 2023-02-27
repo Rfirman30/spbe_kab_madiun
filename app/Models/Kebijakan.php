@@ -13,6 +13,6 @@ class Kebijakan extends Model
 
     protected $fillable = [
         'nama',
-        'file'
+        'file',
     ];
 }
