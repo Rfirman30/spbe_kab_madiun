@@ -64,20 +64,6 @@
 				<li>
 					<a href="/eksternal">Public</a>
 				</li>
-				<li class="dropdown">
-					<a href="#"><span>Tata Kelola SPBE</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
-					<ul>
-						<li>
-							<a href="#">Kelembagaan</a>
-						</li>
-						<li>
-							<a href="#">Strategi dan Perencanaan</a>
-						</li>
-						<li>
-							<a href="#">Teknologi Informasi dan Komunikasi</a>
-						</li>
-					</ul>
-				</li>
 			</ul>
 		</li>
 		<li>

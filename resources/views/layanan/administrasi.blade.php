@@ -1,16 +1,7 @@
 @extends('layout.index') 
 @section('content')
-
-<div class="container-md" >
-<div class="card" style="width: 18rem;">
-  <img src="assets/img/call.jpeg" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
+<div class="mt-4">
+<div class="container">
 <div class="accordion" id="accordionPanelsStayOpenExample">
 	<div class="accordion-item">
 		<h2 class="accordion-header" id="panelsStayOpen-headingOne"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">Pegawai</button></h2>
@@ -38,4 +29,6 @@
 	</div>
 </div>
 </div>
+</div>
+<br>
 @endsection

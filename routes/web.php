@@ -1,5 +1,6 @@
 <?php
 
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -49,12 +50,12 @@ Route::get('/uker', function () {
     return view('profil.unitKerja');
 });
 
-Route::get('/internal', function () {
-    return view('layanan.internal');
+Route::get('/administrasi', function () {
+    return view('layanan.administrasi');
 });
 
-Route::get('/eksternal', function () {
-    return view('layanan.eksternal');
+Route::get('/public', function () {
+    return view('layanan.public');
 });
 
 Route::get('/peraturan', function () {

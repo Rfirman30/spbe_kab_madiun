@@ -1,6 +1,7 @@
 @extends('layout.index')
 @section('content')
 
+<div class="mt-4">
 <div class="container">
 <div class="accordion accordion-flush" id="accordionFlushExample">
   <div class="accordion-item">
@@ -35,5 +36,7 @@
   </div>
 </div>
 </div>
+</div>
+<br>
 
 @endsection
