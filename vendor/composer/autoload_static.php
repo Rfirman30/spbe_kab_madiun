@@ -540,6 +540,7 @@ class ComposerStaticInita8f50160b5435d1f7d7c49f283b4da8d
         'App\\Models\\Footer' => __DIR__ . '/../..' . '/app/Models/Footer.php',
         'App\\Models\\Kebijakan' => __DIR__ . '/../..' . '/app/Models/Kebijakan.php',
         'App\\Models\\Layanan' => __DIR__ . '/../..' . '/app/Models/Layanan.php',
+        'App\\Models\\Navbar' => __DIR__ . '/../..' . '/app/Models/Navbar.php',
         'App\\Models\\Profil' => __DIR__ . '/../..' . '/app/Models/Profil.php',
         'App\\Models\\Tatakelola' => __DIR__ . '/../..' . '/app/Models/Tatakelola.php',
         'App\\Models\\User' => __DIR__ . '/../..' . '/app/Models/User.php',
