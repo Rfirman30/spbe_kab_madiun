@@ -29,21 +29,18 @@
   ======================================================== -->
 </head>
 <body>
-<div class="wrapper">
-        @include('admin.layout.navbar')
-        {{-- Sidebar --}}
-        @include('admin.layout.sidebar')
-        {{-- End Sidebar --}}
+<!-- ======= Header ======= -->
+@include('layout.navbar')
+<!-- ======= End Header ======= -->
 
-        <div class="content-wrapper">
-            {{-- Isi --}}
-            @yield('isi')
-            {{-- End Isi --}}
-        </div>
+<!-- ======= Content ======= -->
+@yield('content')
+<!-- ======= End Content ======= -->
 
-        {{-- Footer --}}
-        @include('admin.layout.footer')
-    </div>
+<!-- ======= Footer ======= -->
+@include('layout.footer')
+<!-- ======= End Footer ======= -->
+
 
 <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 <div id="preloader"></div>
