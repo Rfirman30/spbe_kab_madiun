@@ -78,6 +78,7 @@ Route::get('/kebiadmin', function () {
     return view('admin.kebijakan_admin.index');
 });
 
+//login
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
