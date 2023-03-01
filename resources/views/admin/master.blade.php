@@ -48,6 +48,7 @@
     </div>
     {{-- End Footer --}}
 
+
     <!-- jQuery -->
     <script src="plugins/jquery/jquery.min.js"></script>
     <!-- jQuery UI 1.11.4 -->

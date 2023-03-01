@@ -67,9 +67,10 @@ Route::get('/admin', function () {
     return view('admin.master');
 });
 
-Route::get('/home', function () {
-    return view('admin.modul.home.index');
+Route::get('/dashboard', function () {
+    return view('admin.layout.index');
 });
+
 
 //kebijakanAdmin
 Route::resource('/kebijakans', \App\Http\Controllers\KebijakanController::class);
