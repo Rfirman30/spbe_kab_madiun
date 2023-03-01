@@ -1,5 +1,30 @@
 @extends('master') 
 @section('content') 
+
+<!-- ======= Carousel ======= -->
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="assets/img/pemkab.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/pemkab.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="assets/img/pemkab.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<!-- ======= End Carousel ======= -->
+
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="hero">
 <div class="container position-relative">
@@ -14,9 +39,9 @@
 				<a href="https://youtu.be/6RiArqhWLDw" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Tonton Video</span></a>
 			</div>
 		</div>
-		<div class="col-lg-6 order-1 order-lg-2">
+		{{-- <div class="col-lg-6 order-1 order-lg-2">
 			<img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
-		</div>
+		</div> --}}
 	</div>
 </div>
 <div class="icon-boxes position-relative">

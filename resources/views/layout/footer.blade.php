@@ -4,6 +4,8 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-info">
+          <img src="assets/img/hero-img2.png" class="img-fluid" alt="">
+          <br><br><br>
           <a href="index.html" class="logo d-flex align-items-center">
             <span>Kabupaten Madiun</span>
           </a>
