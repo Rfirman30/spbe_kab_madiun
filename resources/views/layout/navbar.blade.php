@@ -53,7 +53,7 @@
 			<a href="/tata">Tata Kelola SPBE</a>
 		</li>
 		<li>
-			<a href="/tentang">Manajemen SPBE</a>
+			<a href="/manajemen">Manajemen SPBE</a>
 		</li>
 		{{-- <li class="dropdown">
 			<a href="#"><span>Layanan</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>

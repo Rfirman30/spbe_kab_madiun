@@ -460,14 +460,16 @@
 	<!-- End Service Item -->
 	<div class="col-lg-4 col-md-6">
 		<div class="service-item position-relative">
-			<div class="icon">
+			<img src="assets/img/spbe2020.png" alt="" width="330">
+			<br><br>
+			{{-- <div class="icon">
 				<i class="bi bi-bounding-box-circles"></i>
-			</div>
+			</div> --}}
 			<h3>Indeks SPBE Pemerintah Kabupten Madiun 2020</h3>
 			<p>
 				 Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.
 			</p>
-			<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+			<a href="/detailProgres2" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
 		</div>
 	</div>
 	<!-- End Service Item -->

@@ -66,6 +66,14 @@ Route::get('/detailProgres', function () {
     return view('detailProgres.DProgres');
 });
 
+Route::get('/detailProgres2', function () {
+    return view('detailProgres.DProgres2');
+});
+
+Route::get('/manajemen', function () {
+    return view('layout.manajemen');
+});
+
 //admin
 Route::get('/admin', function () {
     return view('admin.master');
@@ -93,6 +101,6 @@ Route::get('/navbarcontrol', function () {
     return view('admin.navbarcontrol.index');
 });
 
-Route::get('/manajemen', function () {
+Route::get('/manajemenadmin', function () {
     return view('admin.manajemen.index');
 });
