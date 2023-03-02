@@ -445,21 +445,23 @@
 	 --}}
 	<div class="col-lg-4 col-md-6">
 		<div class="service-item position-relative">
-			<div class="icon">
+			<img src="assets/img/progresspbe2019.png" alt="" width="330">
+			<br><br>
+			{{-- <div class="icon">
 				<i class="bi bi-bounding-box-circles"></i>
-			</div>
+			</div> --}}
 			<h3>Indeks SPBE Pemerintah Kabupten Madiun 2019</h3>
 			<p>
 				 Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.
 			</p>
-			<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
+			<a href="detailProgres" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
 		</div>
 	</div>
 	<!-- End Service Item -->
 	<div class="col-lg-4 col-md-6">
 		<div class="service-item position-relative">
 			<div class="icon">
-				<i class="bi bi-calendar4-week"></i>
+				<i class="bi bi-bounding-box-circles"></i>
 			</div>
 			<h3>Indeks SPBE Pemerintah Kabupten Madiun 2020</h3>
 			<p>
@@ -472,7 +474,7 @@
 	<div class="col-lg-4 col-md-6">
 		<div class="service-item position-relative">
 			<div class="icon">
-				<i class="bi bi-chat-square-text"></i>
+				<i class="bi bi-bounding-box-circles"></i>
 			</div>
 			<h3>Indeks SPBE Pemerintah Kabupten Madiun 2022</h3>
 			<p>

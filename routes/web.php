@@ -62,6 +62,10 @@ Route::get('/peraturan', function () {
     return view('profil.peraturan');
 });
 
+Route::get('/detailProgres', function () {
+    return view('detailProgres.DProgres');
+});
+
 //admin
 Route::get('/admin', function () {
     return view('admin.master');
