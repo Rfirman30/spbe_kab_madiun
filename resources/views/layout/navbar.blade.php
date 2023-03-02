@@ -21,7 +21,7 @@
 <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 	<a href="/" class="logo d-flex align-items-center" >
 	<!-- Uncomment the line below if you also wish to use an image logo -->
-	<img src="assets/img/favicon.png" alt="">
+	<img src="assets/img/favicon.png" alt="" width="47">
 	<h1>KABUPATEN MADIUN</h1>
 	</a>
 	<nav id="navbar" class="navbar">
@@ -55,14 +55,14 @@
 		<li>
 			<a href="/tentang">Manajemen SPBE</a>
 		</li>
-		<li class="dropdown">
+		{{-- <li class="dropdown">
 			<a href="#"><span>Layanan</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
 			<ul>
 				<li>
-					<a href="/internal">Administrasi</a>
+					<a href="/administrasi">Administrasi</a>
 				</li>
 				<li>
-					<a href="/eksternal">Public</a>
+					<a href="/public">Public</a>
 				</li>
 				<li class="dropdown">
 					<a href="#"><span>Tata Kelola SPBE</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
@@ -79,7 +79,7 @@
 					</ul>
 				</li>
 			</ul>
-		</li>
+		</li> --}}
 		<li>
 			<a href="/berita">Berita</a>
 		</li>

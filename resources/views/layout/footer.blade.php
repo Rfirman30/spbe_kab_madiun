@@ -7,7 +7,7 @@
           <img src="assets/img/hero-img2.png" class="img-fluid" alt="">
           <br><br><br>
           <a href="index.html" class="logo d-flex align-items-center">
-            <span>Kabupaten Madiun</span>
+            <span>KABUPATEN MADIUN</span>
           </a>
           <p>Dinas Komunikasi dan Informatika Kaupaten Madiun</p>
           {{-- <div class="social-links d-flex mt-4">
@@ -19,18 +19,17 @@
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
+          <h4>Domain SPBE</h4>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Kebijakan SPBE</a></li>
+            <li><a href="#">Tata Kelola SPBE</a></li>
+            <li><a href="#">Manajemen SPBE</a></li>
+            <li><a href="#">Layanan</a></li>
           </ul>
         </div>
 
         <div class="col-lg-2 col-6 footer-links">
-          <h4>Our Services</h4>
+          <h4>Tautan Terkait</h4>
           <ul>
             <li><a href="#">Web Design</a></li>
             <li><a href="#">Web Development</a></li>

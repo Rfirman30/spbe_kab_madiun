@@ -1,30 +1,24 @@
-@extends('master') 
-@section('content') 
-
+@extends('master') @section('content') 
 <!-- ======= Carousel ======= -->
-<div id="carouselExample" class="carousel slide">
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" data-bs-interval="2000">
       <img src="assets/img/pemkab.png" class="d-block w-100" alt="...">
     </div>
-    <div class="carousel-item">
-      <img src="assets/img/pemkab.png" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="assets/img/pemkab.png" class="d-block w-100" alt="...">
+    <div class="carousel-item" data-bs-interval="3000">
+      <img src="assets/img/pemkab2.jpeg" class="d-block w-100" alt="...">
     </div>
   </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
 <!-- ======= End Carousel ======= -->
-
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="hero">
 <div class="container position-relative">
@@ -32,21 +26,29 @@
 		<div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
 			<h2>Selamat Datang Di <span>Kabupaten Madiun</span></h2>
 			<p>
-				SPBE merupakan singkatan dari Sistem Pemerintahan Berbasis Elektronik, Sistem Pemerintahan Berbasis Elektronik (SPBE) adalah penyelenggaraan pemerintahan yang memanfaatkan teknologi informasi dan komunikasi untuk memberikan layanan kepada Pengguna SPBE. Hal ini seperti yang tertuang pada Peraturan Presiden No. 95 Tahun 2018 tentang Sistem Pemerintahan Berbasis Elektronik. SPBE ditujukan untuk untuk mewujudkan tata kelola pemerintahan yang bersih, efektif, transparan, dan akuntabel serta pelayanan publik yang berkualitas dan terpercaya. Tata kelola dan manajemen sistem pemerintahan berbasis elektronik secara nasional juga diperlukan untuk meningkatkan keterpaduan dan efisiensi sistem pemerintahan berbasis elektronik.
+				 SPBE merupakan singkatan dari Sistem Pemerintahan Berbasis Elektronik, Sistem Pemerintahan Berbasis Elektronik (SPBE) adalah penyelenggaraan pemerintahan yang memanfaatkan teknologi informasi dan komunikasi untuk memberikan layanan kepada Pengguna SPBE. Hal ini seperti yang tertuang pada Peraturan Presiden No. 95 Tahun 2018 tentang Sistem Pemerintahan Berbasis Elektronik. SPBE ditujukan untuk untuk mewujudkan tata kelola pemerintahan yang bersih, efektif, transparan, dan akuntabel serta pelayanan publik yang berkualitas dan terpercaya. Tata kelola dan manajemen sistem pemerintahan berbasis elektronik secara nasional juga diperlukan untuk meningkatkan keterpaduan dan efisiensi sistem pemerintahan berbasis elektronik.
 			</p>
 			<div class="d-flex justify-content-center justify-content-lg-start">
 				<a href="#about" class="btn-get-started">Mulai</a>
 				<a href="https://youtu.be/6RiArqhWLDw" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Tonton Video</span></a>
 			</div>
 		</div>
-		{{-- <div class="col-lg-6 order-1 order-lg-2">
+		 {{--
+		<div class="col-lg-6 order-1 order-lg-2">
 			<img src="assets/img/hero-img.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
-		</div> --}}
+		</div>
+		 --}}
 	</div>
 </div>
+<br>
+ {{--
 <div class="icon-boxes position-relative">
 	<div class="container position-relative">
 		<div class="row gy-4 mt-5">
+			<div class="section-header">
+				<h2>Progres Perkembangan SPBE</h2>
+				<h4>Perkembangan terkini</h4>
+			</div>
 			<div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
 				<div class="icon-box">
 					<div class="icon">
@@ -86,7 +88,193 @@
 	</div>
 </div>
 </div>
+<div class="icon-boxes position-relative">
+<div class="container position-relative">
+	<div class="row gy-4 mt-5">
+		<div class="section-header">
+			<h2>Progres Perkembangan SPBE</h2>
+			<h3>Perkembangan terkini</h3>
+		</div>
+		<div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+			<div class="icon-box">
+				<div class="icon">
+					<i class="bi bi-easel"></i>
+				</div>
+				<h4 class="title"><a href="" class="stretched-link">Lorem Ipsum</a></h4>
+			</div>
+		</div>
+		<!--End Icon Box -->
+		<div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+			<div class="icon-box">
+				<div class="icon">
+					<i class="bi bi-gem"></i>
+				</div>
+				<h4 class="title"><a href="" class="stretched-link">Sed ut perspiciatis</a></h4>
+			</div>
+		</div>
+		<!--End Icon Box -->
+		<div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+			<div class="icon-box">
+				<div class="icon">
+					<i class="bi bi-geo-alt"></i>
+				</div>
+				<h4 class="title"><a href="" class="stretched-link">Magni Dolores</a></h4>
+			</div>
+		</div>
+		<!--End Icon Box -->
+		<div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+			<div class="icon-box">
+				<div class="icon">
+					<i class="bi bi-command"></i>
+				</div>
+				<h4 class="title"><a href="" class="stretched-link">Nemo Enim</a></h4>
+			</div>
+		</div>
+		<!--End Icon Box --></div>
+</div>
+</div>
+ --}} </section>
+ 
+<section id="services" class="services sections-bg">
+<div class="container" data-aos="fade-up">
+<div class="section-header">
+	<h2>Layanan</h2>
+	<h4>Administrasi</h4>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea, dignissimos est mollitia perspiciatis fugit consequatur obcaecati ducimus debitis quisquam aut ad, ex consequuntur accusamus voluptatum quod amet nulla laborum?
+	</p>
+</div>
+<div class="mt-4">
+	<div class="container">
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Kepegawaian</button></h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<a href="https://mysapk.bkn.go.id" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> Simpeg
+						</i></button></a>
+						
+						<a href="https://kinerja.bkn.go.id/" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> Kinerja BKN
+						</i></button></a>
+						
+						<a href="https://mysapk.bkn.go.id/" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> Mys APK BKN
+						</i></button></a>
+
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Perencanaan dan penganggaran</button></h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+
+						<a href="https://madiunkab.sipd.kemendagri.go.id/daerah" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> Sistem Informasi Pemerintah Daerah
+						</i></button></a>
+
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">E-Office</button></h2>
+				<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+
+						<a href="https://srikandi.arsip.go.id/" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> Srikandi
+						</i></button></a>
+
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Pengadaan Barang dan Jasa</button></h2>
+				<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+
+						<a href="https://lpse.madiunkab.go.id/eproc4" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> LPSE
+						</i></button></a>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<br>
+<div class="container" data-aos="fade-up">
+<div class="section-header">
+	<h2>Layanan</h2>
+	<h4>Public</h4>
+	<p>
+		Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, ea, dignissimos est mollitia perspiciatis fugit consequatur obcaecati ducimus debitis quisquam aut ad, ex consequuntur accusamus voluptatum quod amet nulla laborum?
+	</p>
+</div>
+<div class="mt-4">
+	<div class="container">
+		<div class="accordion accordion-flush" id="accordionFlushExample">
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Pengaduan</button></h2>
+				<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+						<a href="https://www.lapor.go.id/" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> Lapor
+						</i></button></a>
+						
+						<a href="https://data.madiunkab.go.id/" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> Satu Data Tingkat Kabupaten Madiun
+						</i></button></a>
+
+					</div>
+				</div>
+			</div>
+			{{-- <div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Perencanaan dan penganggaran</button></h2>
+				<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+
+						<a href="https://madiunkab.sipd.kemendagri.go.id/daerah" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> Sistem Informasi Pemerintah Daerah
+						</i></button></a>
+
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">E-Office</button></h2>
+				<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+
+						<a href="https://srikandi.arsip.go.id/" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> Srikandi
+						</i></button></a>
+
+					</div>
+				</div>
+			</div>
+			<div class="accordion-item">
+				<h2 class="accordion-header" id="flush-headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Pengadaan Barang dan Jasa</button></h2>
+				<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+					<div class="accordion-body">
+
+						<a href="https://lpse.madiunkab.go.id/eproc4" target="_blank">
+						<button type="button" class="btn btn-light"><i class="fa fa-globe"> LPSE
+						</i></button></a>
+
+					</div>
+				</div>
+			</div> --}}
+		</div>
+	</div>
+</div>
+
+</div>
 </section>
+<br>
 <!-- End Hero Section -->
 <main id="main">
 <!-- ======= About Us Section ======= -->
@@ -97,20 +285,20 @@
 		<h3>Sambutan</h3>
 		<img src="assets/img/pemkab.png" class="img-fluid rounded-4 mb-4" alt="">
 		<p>
-			Puji syukur kita panjatkan kehadirat Allah SWT yang telah melimpahkan rahmat dan hidayahnya, sehingga Pemerintah Kabupaten Madiun bisa mewujudkan portal / website SPBE Kabupaten Madiun. Launching portal ini sekaligus menandai Kick Off Akselerasi Implementasi SPBE (Sistem Pemerintahan Berbasis Elektronik) Kabupaten Madiun. SPBE di era sekarang ini bukan sesuatu pilihan tetapi merupakan keharusan yang dilakukan Pemerintahan. Apalagi dalam tatanan normal baru / New Normal, ASN seeperti disampaikan MENPANRB harus dapat menerapkan flexible working arrangement atau sistem kerja fleksibel. Fleksibilitas ini memungkinkan ASN bisa melaksanakan tugas di kantor maupun di rumah dan sistem kerja tersebut memerlukan dukungan TIK yang memadai agar roda pemerintahan dan pelayanan publik tetap berjalan dengan baik. Selain hal tersebut di masa pandemi Covid 19 pemanfaatan TIK terus meningkat sebagai upaya mengurangi pertemuan dan kerumunan, sehingga memaksa kita untuk mau tidak mau harus menyesuaikan dengan kondisi dimana kultur atau budaya penggunaan digital /TIK.
+			 Puji syukur kita panjatkan kehadirat Allah SWT yang telah melimpahkan rahmat dan hidayahnya, sehingga Pemerintah Kabupaten Madiun bisa mewujudkan portal / website SPBE Kabupaten Madiun. Launching portal ini sekaligus menandai Kick Off Akselerasi Implementasi SPBE (Sistem Pemerintahan Berbasis Elektronik) Kabupaten Madiun. SPBE di era sekarang ini bukan sesuatu pilihan tetapi merupakan keharusan yang dilakukan Pemerintahan. Apalagi dalam tatanan normal baru / New Normal, ASN seeperti disampaikan MENPANRB harus dapat menerapkan flexible working arrangement atau sistem kerja fleksibel. Fleksibilitas ini memungkinkan ASN bisa melaksanakan tugas di kantor maupun di rumah dan sistem kerja tersebut memerlukan dukungan TIK yang memadai agar roda pemerintahan dan pelayanan publik tetap berjalan dengan baik. Selain hal tersebut di masa pandemi Covid 19 pemanfaatan TIK terus meningkat sebagai upaya mengurangi pertemuan dan kerumunan, sehingga memaksa kita untuk mau tidak mau harus menyesuaikan dengan kondisi dimana kultur atau budaya penggunaan digital /TIK.
 		</p>
 		<p>
-			Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.
+			 Temporibus nihil enim deserunt sed ea. Provident sit expedita aut cupiditate nihil vitae quo officia vel. Blanditiis eligendi possimus et in cum. Quidem eos ut sint rem veniam qui. Ut ut repellendus nobis tempore doloribus debitis explicabo similique sit. Accusantium sed ut omnis beatae neque deleniti repellendus.
 		</p>
 	</div>
 	<div class="col-lg-6">
 		<div class="content ps-0 ps-lg-5">
-            <h3>SISTEM PEMERINTAH BERBASIS ELEKTRONIK - SPBE</h3>
+			<h3>SISTEM PEMERINTAH BERBASIS ELEKTRONIK - SPBE</h3>
 			<p class="fst-italic">
-                Dasar penyusunan SPBE dengan memperhatikan komparasi peraturan PermenPanRB Nomor 5 Tahun 2018 dengan PermenPanRB Nomor 59 Tahun 2020
-            </p>
+				 Dasar penyusunan SPBE dengan memperhatikan komparasi peraturan PermenPanRB Nomor 5 Tahun 2018 dengan PermenPanRB Nomor 59 Tahun 2020
+			</p>
 			<p>
-				Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
+				 Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
 			</p>
 			<div align="center">
 				<img src="assets/img/pakbup.jpeg" class="img-fluid rounded-4" alt="" width="300px">
@@ -128,21 +316,16 @@
 <div class="clients-slider swiper">
 	<div class="swiper-wrapper align-items-center">
 		<div class="swiper-slide">
-			<a href="https://www.lapor.go.id/" target="_blank">
-			<img src="assets/img/clients/lapor.jpeg" class="img-fluid" alt="">
-			</a>
+			<a href="https://www.lapor.go.id/" target="_blank"><img src="assets/img/clients/lapor.jpeg" class="img-fluid" alt=""></a>
 		</div>
 		<div class="swiper-slide">
-			<a href="https://lpse.madiunkab.go.id/eproc4" target="_blank">
-			<img src="assets/img/clients/lpse.jpeg" class="img-fluid" alt="">
-			</a>
+			<a href="https://lpse.madiunkab.go.id/eproc4" target="_blank"><img src="assets/img/clients/lpse.jpeg" class="img-fluid" alt=""></a>
 		</div>
 		<div class="swiper-slide">
-			<a href="https://lpplpuroboyofmcaruban.blogspot.com/" target="_blank">
-			<img src="assets/img/clients/LOGO-1-GIF.gif" class="img-fluid" alt="">
-			</a>
+			<a href="https://lpplpuroboyofmcaruban.blogspot.com/" target="_blank"><img src="assets/img/clients/LOGO-1-GIF.gif" class="img-fluid" alt=""></a>
 		</div>
-		{{-- <div class="swiper-slide">
+		 {{--
+		<div class="swiper-slide">
 			<img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
 		</div>
 		<div class="swiper-slide">
@@ -153,18 +336,18 @@
 		</div>
 		<div class="swiper-slide">
 			<img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
-		</div> --}}
+		</div>
+		 --}}
 		<div class="swiper-slide">
-			<a href="https://www.kominfo.go.id/" target="_blank">
-			<img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
-			</a>
+			<a href="https://www.kominfo.go.id/" target="_blank"><img src="assets/img/clients/client-9.png" class="img-fluid" alt=""></a>
 		</div>
 	</div>
 </div>
 </div>
 </section>
 <!-- End Clients Section -->
-{{-- <!-- ======= Stats Counter Section ======= -->
+ {{-- 
+<!-- ======= Stats Counter Section ======= -->
 <section id="stats-counter" class="stats-counter">
 <div class="container" data-aos="fade-up">
 <div class="row gy-4 align-items-center">
@@ -196,19 +379,21 @@
 </div>
 </div>
 </section>
-<!-- End Stats Counter Section --> --}}
+<!-- End Stats Counter Section -->
+ --}} {{-- 
 <!-- ======= Call To Action Section ======= -->
 <section id="call-to-action" class="call-to-action">
 <div class="container text-center" data-aos="zoom-out">
 <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
 <h3>Kabupaten Madiun</h3>
 <p>
-	Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, obcaecati odit. Rem saepe quis praesentium porro commodi eaque repellat sunt mollitia. Voluptates amet eveniet laboriosam nisi facere error pariatur eaque.
+	 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores, obcaecati odit. Rem saepe quis praesentium porro commodi eaque repellat sunt mollitia. Voluptates amet eveniet laboriosam nisi facere error pariatur eaque.
 </p>
 <a class="cta-btn" href="#">Call To Action</a>
 </div>
 </section>
 <!-- End Call To Action Section -->
+ --}} 
 <!-- ======= Our Services Section ======= -->
 <section id="services" class="services sections-bg">
 <div class="container" data-aos="fade-up">
@@ -217,14 +402,15 @@
 	<h4>Perkembangan terkini</h4>
 </div>
 <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">
-	{{-- <div class="col-lg-4 col-md-6">
+	 {{--
+	<div class="col-lg-4 col-md-6">
 		<div class="service-item position-relative">
 			<div class="icon">
 				<i class="bi bi-activity"></i>
 			</div>
 			<h3>Nesciunt Mete</h3>
 			<p>
-				Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.
+				 Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.
 			</p>
 			<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
 		</div>
@@ -237,7 +423,7 @@
 			</div>
 			<h3>Eosle Commodi</h3>
 			<p>
-				Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
+				 Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
 			</p>
 			<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
 		</div>
@@ -250,12 +436,13 @@
 			</div>
 			<h3>Ledo Markt</h3>
 			<p>
-				Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+				 Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
 			</p>
 			<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
 		</div>
 	</div>
-	<!-- End Service Item --> --}}
+	<!-- End Service Item -->
+	 --}}
 	<div class="col-lg-4 col-md-6">
 		<div class="service-item position-relative">
 			<div class="icon">
@@ -263,7 +450,7 @@
 			</div>
 			<h3>Indeks SPBE Pemerintah Kabupten Madiun 2019</h3>
 			<p>
-				Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.
+				 Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.
 			</p>
 			<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
 		</div>
@@ -276,7 +463,7 @@
 			</div>
 			<h3>Indeks SPBE Pemerintah Kabupten Madiun 2020</h3>
 			<p>
-				Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.
+				 Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.
 			</p>
 			<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
 		</div>
@@ -289,7 +476,7 @@
 			</div>
 			<h3>Indeks SPBE Pemerintah Kabupten Madiun 2022</h3>
 			<p>
-				Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.
+				 Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.
 			</p>
 			<a href="#" class="readmore stretched-link">Read more <i class="bi bi-arrow-right"></i></a>
 		</div>
@@ -298,13 +485,14 @@
 </div>
 </section>
 <!-- End Our Services Section -->
-{{-- <!-- ======= Testimonials Section ======= -->
+ {{-- 
+<!-- ======= Testimonials Section ======= -->
 <section id="testimonials" class="testimonials">
 <div class="container" data-aos="fade-up">
 <div class="section-header">
 	<h2>Testimonials</h2>
 	<p>
-		Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam
+		 Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam
 	</p>
 </div>
 <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
@@ -425,7 +613,7 @@
 <div class="section-header">
 	<h2>Portfolio</h2>
 	<p>
-		Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti
+		 Quam sed id excepturi ccusantium dolorem ut quis dolores nisi llum nostrum enim velit qui ut et autem uia reprehenderit sunt deleniti
 	</p>
 </div>
 <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
@@ -445,7 +633,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">App 1</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -457,7 +645,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">Product 1</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -469,7 +657,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">Branding 1</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -481,7 +669,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">Books 1</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -493,7 +681,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">App 2</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -505,7 +693,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">Product 2</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -517,7 +705,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">Branding 2</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -529,7 +717,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">Books 2</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -541,7 +729,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">App 3</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -553,7 +741,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">Product 3</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -565,7 +753,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">Branding 3</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -577,7 +765,7 @@
 				<div class="portfolio-info">
 					<h4><a href="portfolio-details.html" title="More Details">Books 3</a></h4>
 					<p>
-						Lorem ipsum, dolor sit amet consectetur
+						 Lorem ipsum, dolor sit amet consectetur
 					</p>
 				</div>
 			</div>
@@ -593,7 +781,7 @@
 <div class="section-header">
 	<h2>Our Team</h2>
 	<p>
-		Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum
+		 Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum
 	</p>
 </div>
 <div class="row gy-4">
@@ -654,15 +842,16 @@
 	</div>
 	<!-- End Team Member --></div>
 </div>
-</section> --}}
+</section> --}} 
 <!-- End Our Team Section -->
-{{-- <!-- ======= Pricing Section ======= -->
+ {{-- 
+<!-- ======= Pricing Section ======= -->
 <section id="pricing" class="pricing sections-bg">
 <div class="container" data-aos="fade-up">
 <div class="section-header">
 	<h2>Pricing</h2>
 	<p>
-		Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop
+		 Aperiam dolorum et et wuia molestias qui eveniet numquam nihil porro incidunt dolores placeat sunt id nobis omnis tiledo stran delop
 	</p>
 </div>
 <div class="row g-4 py-lg-5" data-aos="zoom-out" data-aos-delay="100">
@@ -758,7 +947,8 @@
 	<!-- End Pricing Item --></div>
 </div>
 </section>
-<!-- End Pricing Section --> --}}
+<!-- End Pricing Section -->
+ --}} 
 <!-- ======= Frequently Asked Questions Section ======= -->
 <section id="faq" class="faq">
 <div class="container" data-aos="fade-up">
@@ -767,7 +957,7 @@
 		<div class="content px-xl-5">
 			<h3>Informasi SPBE <strong>Tahapan Evaluasi SPBE</strong></h3>
 			<p>
-				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
+				 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
 			</p>
 		</div>
 	</div>
@@ -781,8 +971,8 @@
 				</h3>
 				<div id="faq-content-1" class="accordion-collapse collapse" data-bs-parent="#faqlist">
 					<div class="accordion-body">
-                        Penyusunan, Perencanaan, Pembentukan Tim Asesor, Sosialisasi, dan Pedoman pemantauan dan evaluasi SPBE.
-                    </div>
+						 Penyusunan, Perencanaan, Pembentukan Tim Asesor, Sosialisasi, dan Pedoman pemantauan dan evaluasi SPBE.
+					</div>
 				</div>
 			</div>
 			<!-- # Faq item-->
@@ -794,8 +984,8 @@
 				</h3>
 				<div id="faq-content-2" class="accordion-collapse collapse" data-bs-parent="#faqlist">
 					<div class="accordion-body">
-                        Penilaian mandiri, Penilaian dokumen, Penilaian interviu, dan Penilaian visitasi (jika diperlukan).
-                    </div>
+						 Penilaian mandiri, Penilaian dokumen, Penilaian interviu, dan Penilaian visitasi (jika diperlukan).
+					</div>
 				</div>
 			</div>
 			<!-- # Faq item-->
@@ -807,8 +997,8 @@
 				</h3>
 				<div id="faq-content-3" class="accordion-collapse collapse" data-bs-parent="#faqlist">
 					<div class="accordion-body">
-                        Indeks SPBE, Indeks Domain, Indeks Aspek, Nilai Indikator, dan Rekomendasi perbaikan.
-                    </div>
+						 Indeks SPBE, Indeks Domain, Indeks Aspek, Nilai Indikator, dan Rekomendasi perbaikan.
+					</div>
 				</div>
 			</div>
 			<!-- # Faq item-->
@@ -820,162 +1010,164 @@
 				</h3>
 				<div id="faq-content-4" class="accordion-collapse collapse" data-bs-parent="#faqlist">
 					<div class="accordion-body">
-                        2019 = 3.01 (Baik), 2021 = 2.48 (Cukup), 2022 = 3.31 (Baik)
+						 2019 = 3.01 (Baik), 2021 = 2.48 (Cukup), 2022 = 3.31 (Baik)
 					</div>
 				</div>
 			</div>
+		</div>
 	</div>
-</div>
 </div>
 </section>
 <!-- End Frequently Asked Questions Section -->
-{{-- <!-- ======= Recent Blog Posts Section ======= -->
+ {{-- 
+<!-- ======= Recent Blog Posts Section ======= -->
 <section id="recent-posts" class="recent-posts sections-bg">
 <div class="container" data-aos="fade-up">
-<div class="section-header">
-	<h2>Recent Blog Posts</h2>
-	<p>
-		Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio
-	</p>
-</div>
-<div class="row gy-4">
-	<div class="col-xl-4 col-md-6">
-		<article>
-		<div class="post-img">
-			<img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
-		</div>
-		<p class="post-category">Politics</p>
-		<h2 class="title"><a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a></h2>
-		<div class="d-flex align-items-center">
-			<img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-			<div class="post-meta">
-				<p class="post-author">Maria Doe</p>
-				<p class="post-date">
-					<time datetime="2022-01-01">Jan 1, 2022</time>
-				</p>
-			</div>
-		</div>
-		</article>
+	<div class="section-header">
+		<h2>Recent Blog Posts</h2>
+		<p>
+			 Consequatur libero assumenda est voluptatem est quidem illum et officia imilique qui vel architecto accusamus fugit aut qui distinctio
+		</p>
 	</div>
-	<!-- End post list item -->
-	<div class="col-xl-4 col-md-6">
-		<article>
-		<div class="post-img">
-			<img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
-		</div>
-		<p class="post-category">Sports</p>
-		<h2 class="title"><a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a></h2>
-		<div class="d-flex align-items-center">
-			<img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-			<div class="post-meta">
-				<p class="post-author">Allisa Mayer</p>
-				<p class="post-date">
-					<time datetime="2022-01-01">Jun 5, 2022</time>
-				</p>
+	<div class="row gy-4">
+		<div class="col-xl-4 col-md-6">
+			<article>
+			<div class="post-img">
+				<img src="assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
 			</div>
-		</div>
-		</article>
-	</div>
-	<!-- End post list item -->
-	<div class="col-xl-4 col-md-6">
-		<article>
-		<div class="post-img">
-			<img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
-		</div>
-		<p class="post-category">Entertainment</p>
-		<h2 class="title"><a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a></h2>
-		<div class="d-flex align-items-center">
-			<img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
-			<div class="post-meta">
-				<p class="post-author">Mark Dower</p>
-				<p class="post-date">
-					<time datetime="2022-01-01">Jun 22, 2022</time>
-				</p>
+			<p class="post-category">Politics</p>
+			<h2 class="title"><a href="blog-details.html">Dolorum optio tempore voluptas dignissimos</a></h2>
+			<div class="d-flex align-items-center">
+				<img src="assets/img/blog/blog-author.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+				<div class="post-meta">
+					<p class="post-author">Maria Doe</p>
+					<p class="post-date">
+						<time datetime="2022-01-01">Jan 1, 2022</time>
+					</p>
+				</div>
 			</div>
+			</article>
 		</div>
-		</article>
-	</div>
-	<!-- End post list item --></div>
-<!-- End recent posts list --></div>
-</section> --}}
-{{-- <!-- End Recent Blog Posts Section --> --}}
+		<!-- End post list item -->
+		<div class="col-xl-4 col-md-6">
+			<article>
+			<div class="post-img">
+				<img src="assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+			</div>
+			<p class="post-category">Sports</p>
+			<h2 class="title"><a href="blog-details.html">Nisi magni odit consequatur autem nulla dolorem</a></h2>
+			<div class="d-flex align-items-center">
+				<img src="assets/img/blog/blog-author-2.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+				<div class="post-meta">
+					<p class="post-author">Allisa Mayer</p>
+					<p class="post-date">
+						<time datetime="2022-01-01">Jun 5, 2022</time>
+					</p>
+				</div>
+			</div>
+			</article>
+		</div>
+		<!-- End post list item -->
+		<div class="col-xl-4 col-md-6">
+			<article>
+			<div class="post-img">
+				<img src="assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+			</div>
+			<p class="post-category">Entertainment</p>
+			<h2 class="title"><a href="blog-details.html">Possimus soluta ut id suscipit ea ut in quo quia et soluta</a></h2>
+			<div class="d-flex align-items-center">
+				<img src="assets/img/blog/blog-author-3.jpg" alt="" class="img-fluid post-author-img flex-shrink-0">
+				<div class="post-meta">
+					<p class="post-author">Mark Dower</p>
+					<p class="post-date">
+						<time datetime="2022-01-01">Jun 22, 2022</time>
+					</p>
+				</div>
+			</div>
+			</article>
+		</div>
+		<!-- End post list item --></div>
+	<!-- End recent posts list --></div>
+</section> --}} {{-- 
+<!-- End Recent Blog Posts Section -->
+ --}} 
 <!-- ======= Contact Section ======= -->
 <section id="contact" class="contact">
 <div class="container" data-aos="fade-up">
-<div class="section-header">
-	<h2>Contact</h2>
-	<p>
-		Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum
-	</p>
-</div>
-<div class="row gx-lg-0 gy-4">
-	<div class="col-lg-4">
-		<div class="info-container d-flex flex-column align-items-center justify-content-center">
-			<div class="info-item d-flex">
-				<i class="bi bi-geo-alt flex-shrink-0"></i>
-				<div>
-					<h4>Location:</h4>
-					<p>
-						Jl. Mastrip No. 23 Madiun
-					</p>
-				</div>
-			</div>
-			<!-- End Info Item -->
-			<div class="info-item d-flex">
-				<i class="bi bi-envelope flex-shrink-0"></i>
-				<div>
-					<h4>Email:</h4>
-					<p>
-						diskominfo@madiunkab.go.id
-					</p>
-				</div>
-			</div>
-			<!-- End Info Item -->
-			<div class="info-item d-flex">
-				<i class="bi bi-phone flex-shrink-0"></i>
-				<div>
-					<h4>Call:</h4>
-					<p>
-						(0351) 462927
-					</p>
-				</div>
-			</div>
-			<!-- End Info Item -->
-			<div class="info-item d-flex">
-				<i class="bi bi-clock flex-shrink-0"></i>
-				<div>
-					<h4>Open Hours:</h4>
-					<p>
-						Mon-Sat: 11AM - 23PM
-					</p>
-				</div>
-			</div>
-			<!-- End Info Item --></div>
+	<div class="section-header">
+		<h2>Contact</h2>
+		<p>
+			 Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum
+		</p>
 	</div>
-	<div class="col-lg-8">
-		<form action="forms/contact.php" method="post" role="form" class="php-email-form">
-			<div class="row">
-				<div class="col-md-6 form-group">
-					<input type="text" name="name" class="form-control" id="name" placeholder="Nama" required></div>
-				<div class="col-md-6 form-group mt-3 mt-md-0">
-					<input type="email" class="form-control" name="email" id="email" placeholder="Email" required></div>
-			</div>
-			<div class="form-group mt-3">
-				<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required></div>
-			<div class="form-group mt-3">
-				<textarea class="form-control" name="message" rows="7" placeholder="Pesan" required></textarea>
-			</div>
-			<div class="my-3">
-				<div class="loading">Loading</div>
-				<div class="error-message"></div>
-				<div class="sent-message">Your message has been sent. Thank you!</div>
-			</div>
-			<div class="text-center">
-				<button type="submit">Submit</button>
-			</div>
-		</form>
-	</div>
-	<!-- End Contact Form --></div>
+	<div class="row gx-lg-0 gy-4">
+		<div class="col-lg-4">
+			<div class="info-container d-flex flex-column align-items-center justify-content-center">
+				<div class="info-item d-flex">
+					<i class="bi bi-geo-alt flex-shrink-0"></i>
+					<div>
+						<h4>Location:</h4>
+						<p>
+							 Jl. Mastrip No. 23 Madiun
+						</p>
+					</div>
+				</div>
+				<!-- End Info Item -->
+				<div class="info-item d-flex">
+					<i class="bi bi-envelope flex-shrink-0"></i>
+					<div>
+						<h4>Email:</h4>
+						<p>
+							 diskominfo@madiunkab.go.id
+						</p>
+					</div>
+				</div>
+				<!-- End Info Item -->
+				<div class="info-item d-flex">
+					<i class="bi bi-phone flex-shrink-0"></i>
+					<div>
+						<h4>Call:</h4>
+						<p>
+							 (0351) 462927
+						</p>
+					</div>
+				</div>
+				<!-- End Info Item -->
+				<div class="info-item d-flex">
+					<i class="bi bi-clock flex-shrink-0"></i>
+					<div>
+						<h4>Open Hours:</h4>
+						<p>
+							 Mon-Sat: 11AM - 23PM
+						</p>
+					</div>
+				</div>
+				<!-- End Info Item --></div>
+		</div>
+		<div class="col-lg-8">
+			<form action="forms/contact.php" method="post" role="form" class="php-email-form">
+				<div class="row">
+					<div class="col-md-6 form-group">
+						<input type="text" name="name" class="form-control" id="name" placeholder="Nama" required></div>
+					<div class="col-md-6 form-group mt-3 mt-md-0">
+						<input type="email" class="form-control" name="email" id="email" placeholder="Email" required></div>
+				</div>
+				<div class="form-group mt-3">
+					<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required></div>
+				<div class="form-group mt-3">
+					<textarea class="form-control" name="message" rows="7" placeholder="Pesan" required></textarea>
+				</div>
+				<div class="my-3">
+					<div class="loading">Loading</div>
+					<div class="error-message"></div>
+					<div class="sent-message">Your message has been sent. Thank you!</div>
+				</div>
+				<div class="text-center">
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</div>
+		<!-- End Contact Form --></div>
 </div>
 </section>
 <!-- End Contact Section --></main>

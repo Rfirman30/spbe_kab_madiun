@@ -6,6 +6,8 @@
 <title>SPBE Kabupaten Madiun</title>
 <meta content="" name="description">
 <meta content="" name="keywords">
+<!-- Icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- Favicons -->
 <link href="assets/img/favicon.png" rel="icon">
 <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
