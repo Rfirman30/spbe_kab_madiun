@@ -13,4 +13,14 @@ class KebijakanController extends Controller
 
         return view('kebijakan_admin.index', compact('kebijakans'));
     }
+
+    /**
+     * Show the form for creating a new resource.
+     *
+     * @return \Illuminate\Http\Response
+     */
+    public function create()
+    {
+        return view('admin.kebijakan.create');
+    }
 }
