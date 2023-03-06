@@ -93,6 +93,9 @@ Route::resource('/layanans', \App\Http\Controllers\LayananController::class);
 //tatakelola admin
 Route::resource('/tatakelolas', \App\Http\Controllers\TataKelolaController::class);
 
+//Footer admin
+Route::resource('/footers', \App\Http\Controllers\FooterController::class);
+
 //login
 Auth::routes();
 
