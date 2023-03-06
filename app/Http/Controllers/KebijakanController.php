@@ -4,12 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Models\Kebijakan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class KebijakanController extends Controller
 {
     public function index()
     {
-        $kebijakans = Kebijakan::latest()->paginate(5);
+        $ar_kebijakan = DB::table('kebijakans')->get();
 
         return view('kebijakan_admin.index', compact('kebijakans'));
     }
