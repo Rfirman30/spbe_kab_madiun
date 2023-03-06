@@ -4,14 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Layanan;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB as LayananDB;
 
 class LayananController extends Controller
 {
     public function index()
     {
-        $layanans = Layanan::latest()->paginate(5);
+        $ar_layanan = LayananDB::table('layanans')->get();
 
-        return view('layanan.index', compact('layanans'));
+        return view('admin.layanan.index', compact('ar_layanan'));
     }
 
     /**

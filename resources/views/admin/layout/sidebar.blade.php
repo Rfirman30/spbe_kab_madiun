@@ -73,7 +73,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/kebiadmin" class="nav-link">
+                            <a href="/kebijakans" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Kebijakan</p>
                             </a>
@@ -91,7 +91,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/layout/fixed-sidebar.html" class="nav-link">
+                            <a href="/layanans" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Layanan</p>
                             </a>

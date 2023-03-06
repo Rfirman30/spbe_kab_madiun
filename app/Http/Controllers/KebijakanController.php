@@ -4,15 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Kebijakan;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\DB as KebijakanDB;
 
 class KebijakanController extends Controller
 {
     public function index()
     {
-        $ar_kebijakan = DB::table('kebijakans')->get();
+        $ar_kebijakan = KebijakanDB::table('kebijakans')->get();
 
-        return view('kebijakan_admin.index', compact('kebijakans'));
+        return view('admin.kebijakan_admin.index', compact('ar_kebijakan'));
     }
 
     /**
@@ -22,6 +22,6 @@ class KebijakanController extends Controller
      */
     public function create()
     {
-        return view('admin.kebijakan.create');
+        return view('admin.kebijakan_admin.create');
     }
 }

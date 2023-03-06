@@ -7,7 +7,7 @@
 	</div>
 	<br>
 		<div class="card-header">
-			<h3 class="card-title">DataTable with default features</h3>
+			<h3 class="card-title">Data Kebijakan</h3>
 		</div>
 		<!-- /.card-header -->
 		<div class="card-body">
@@ -23,7 +23,7 @@
 			<tbody>
 					@foreach ($ar_kebijakan as $kbjkn)
 			<tr>
-				<td>{{ $loop->iteration }}</td>
+				{{-- <td>{{ $loop->iteration }}</td> --}}
                 <td>{{ $kbjkn->nama }}</td>
                 <td>{{ $kbjkn->file }}</td>
 			</tr>

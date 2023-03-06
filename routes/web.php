@@ -87,9 +87,8 @@ Route::get('/dashboard', function () {
 //kebijakanAdmin
 Route::resource('/kebijakans', \App\Http\Controllers\KebijakanController::class);
 
-Route::get('/kebiadmin', function () {
-    return view('admin.kebijakan_admin.index');
-});
+//layanan admin
+Route::resource('/layanans', \App\Http\Controllers\LayananController::class);
 
 //login
 Auth::routes();

@@ -9,10 +9,6 @@ class Kebijakan extends Model
 {
     use HasFactory;
 
-    protected $table = "kebijakans";
-
-    protected $fillable = [
-        'nama',
-        'file',
-    ];
+    protected $table = 'kebijakans';
+    protected $fillable = ['nama', 'file'];
 }
