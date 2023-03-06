@@ -79,7 +79,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="pages/layout/boxed.html" class="nav-link">
+                            <a href="tatakelolas" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Tata Kelola</p>
                             </a>

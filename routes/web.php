@@ -90,6 +90,9 @@ Route::resource('/kebijakans', \App\Http\Controllers\KebijakanController::class)
 //layanan admin
 Route::resource('/layanans', \App\Http\Controllers\LayananController::class);
 
+//tatakelola admin
+Route::resource('/tatakelolas', \App\Http\Controllers\TataKelolaController::class);
+
 //login
 Auth::routes();
 
