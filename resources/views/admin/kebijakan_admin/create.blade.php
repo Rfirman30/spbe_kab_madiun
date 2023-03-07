@@ -1,7 +1,7 @@
 @extends('admin.master')
 @section('isi')
-
-<!-- form start -->
+<div class="wrapper">
+<!-- form start -->  
               <form>
                 <div class="card-body">
                   <div class="form-group">
