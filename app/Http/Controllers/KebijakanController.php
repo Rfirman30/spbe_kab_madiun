@@ -24,7 +24,7 @@ class KebijakanController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.kebijakan_admin.create');
     }
 
     /**
@@ -32,7 +32,13 @@ class KebijakanController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        KebijakanDB::table('kebijakans')->insert([
+            'nama' => $request->nama
+
+        ]);
+
+        return redirect()->route('kebijakans')
+            ->with('success', 'Data Kebijakan Berhasil Disimpan');
     }
 
     /**
@@ -62,8 +68,9 @@ class KebijakanController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
-        //
+        $ar_kebijakan = KebijakanDB::find($id)->delete();
+        return redirect()->route('kebijakans');
     }
 }
