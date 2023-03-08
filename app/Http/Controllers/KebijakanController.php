@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Kebijakan;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\DB as KebijakanDB;
+use Ramsey\Uuid\Uuid;
 
 class KebijakanController extends Controller
 {
@@ -14,7 +15,7 @@ class KebijakanController extends Controller
      */
     public function index()
     {
-        $ar_kebijakan = KebijakanDB::table('kebijakans')->get();
+        $ar_kebijakan = Kebijakan::all();
 
         return view('admin.kebijakan_admin.index', compact('ar_kebijakan'));
     }
@@ -32,9 +33,17 @@ class KebijakanController extends Controller
      */
     public function store(Request $request)
     {
-        KebijakanDB::table('kebijakans')->insert([
-            'nama' => $request->nama
+        $request->validate([
+            'nama' => 'required',
+            'file' => 'required'
+        ]);
 
+        $fileName = Uuid::uuid4() . '.' . $request->file('file')->extension();
+        $request->file('file')->move(public_path('storage/kebijakan'), $fileName);
+
+        Kebijakan::create([
+            'nama' => $request->nama,
+            'file' => $fileName
         ]);
 
         return redirect()->route('kebijakans')
@@ -70,7 +79,8 @@ class KebijakanController extends Controller
      */
     public function destroy($id)
     {
-        $ar_kebijakan = KebijakanDB::find($id)->delete();
+        $ar_kebijakan = Kebijakan::find($id);
+        $ar_kebijakan->delete();
         return redirect()->route('kebijakans');
     }
 }
