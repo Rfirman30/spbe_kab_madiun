@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('kebijakans', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->text('file');
+            $table->string('file');
             $table->timestamps();
         });
     }

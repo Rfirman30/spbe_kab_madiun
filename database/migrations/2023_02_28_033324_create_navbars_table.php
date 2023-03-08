@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::create('navbars', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('kategori');
+            $table->string('file');
             $table->timestamps();
         });
     }

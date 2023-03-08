@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('layanans', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
+            $table->string('kategori');
             $table->text('isi');
-            $table->text('file');
+            $table->string('file');
             $table->timestamps();
         });
     }

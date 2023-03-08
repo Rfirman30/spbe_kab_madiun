@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('footers', function (Blueprint $table) {
             $table->id();
             $table->string('nama');
-            $table->text('file');
+            $table->string('kategori');
+            $table->string('file');
             $table->timestamps();
         });
     }

@@ -13,6 +13,10 @@ return new class extends Migration
     {
         Schema::create('profils', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('kategori');
+            $table->text('isi');
+            $table->string('file');
             $table->timestamps();
         });
     }
