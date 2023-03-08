@@ -15,13 +15,12 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form>
+                <form action="{{ route('kebijakans.store') }}" method="POST" enctype="multipart/form-data">
+                    @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <form action="{{ route('kebijakans.store') }}" method="POST" enctype="multipart/form-data">
-                                @csrf
-                                <label for="NAMA">Nama</label>
-                                <input type="text" class="form-control" name="nama" placeholder="Isi Nama">
+                            <label for="NAMA">Nama</label>
+                            <input type="text" class="form-control" name="nama" placeholder="Isi Nama">
                         </div>
                         <div class="form-group">
                             <label for="InputFile">Masukkan File</label>
