@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama');
             $table->string('kategori');
+            $table->string('subkategori');
             $table->text('isi');
             $table->string('file');
             $table->timestamps();

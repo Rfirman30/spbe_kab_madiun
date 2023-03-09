@@ -46,6 +46,7 @@ class LayananController extends Controller
         Layanan::create([
             'nama' => $request->nama,
             'kategori' => $request->kategori,
+            'subkategori' => $request->subkategori,
             'isi' => $request->isi,
             'file' => $fileName
         ]);
