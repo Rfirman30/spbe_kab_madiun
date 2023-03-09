@@ -1,6 +1,9 @@
 <?php
 
 use App\Http\Controllers\Dashboard\DashboardController;
+use App\Models\Berita;
+use App\Models\Layanan;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -64,7 +67,11 @@ Route::get('/detailProgres2', function () {
 
 //admin
 Route::get('/admin', function () {
-    return view('admin.layout.index');
+    $artikel = Berita::count();
+    $user = User::count();
+    $administrasiLayanan = Layanan::where('type', 'Administrasi')->count();
+    $publicLayanan = Layanan::where('type', 'Public')->count();
+    return view('admin.layout.index', compact('artikel', 'user', 'administrasiLayanan', 'publicLayanan'));
 })->middleware('auth');
 
 //kebijakanAdmin
