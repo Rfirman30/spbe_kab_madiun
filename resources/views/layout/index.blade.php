@@ -42,6 +42,7 @@
 	</div>
 </div>
 <br></section>
+{{-- LAYANAN --}}
 <section id="services" class="services sections-bg">
 <div class="container" data-aos="fade-up">
 	<div class="section-header">
@@ -58,9 +59,9 @@
 					<h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Kepegawaian</button></h2>
 					<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 						<div class="accordion-body">
-							<a href="https://mysapk.bkn.go.id" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe">Simpeg</i></button></a>
-							<a href="https://kinerja.bkn.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe">Kinerja BKN</i></button></a>
-							<a href="https://mysapk.bkn.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe">Mys APK BKN</i></button></a>
+							<a href="https://mysapk.bkn.go.id" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe"> Simpeg</i></button></a>
+							<a href="https://kinerja.bkn.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe"> Kinerja BKN</i></button></a>
+							<a href="https://mysapk.bkn.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe"> Mys APK BKN</i></button></a>
 						</div>
 					</div>
 				</div>
@@ -68,7 +69,7 @@
 					<h2 class="accordion-header" id="flush-headingTwo"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">Perencanaan dan penganggaran</button></h2>
 					<div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
 						<div class="accordion-body">
-							<a href="https://madiunkab.sipd.kemendagri.go.id/daerah" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe">Sistem Informasi Pemerintah Daerah</i></button></a>
+							<a href="https://madiunkab.sipd.kemendagri.go.id/daerah" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe"> Sistem Informasi Pemerintah Daerah</i></button></a>
 						</div>
 					</div>
 				</div>
@@ -76,7 +77,7 @@
 					<h2 class="accordion-header" id="flush-headingThree"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">E-Office</button></h2>
 					<div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
 						<div class="accordion-body">
-							<a href="https://srikandi.arsip.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe">Srikandi</i></button></a>
+							<a href="https://srikandi.arsip.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe"> Srikandi</i></button></a>
 						</div>
 					</div>
 				</div>
@@ -84,7 +85,7 @@
 					<h2 class="accordion-header" id="flush-headingFour"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">Pengadaan Barang dan Jasa</button></h2>
 					<div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
 						<div class="accordion-body">
-							<a href="https://lpse.madiunkab.go.id/eproc4" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe">LPSE</i></button></a>
+							<a href="https://lpse.madiunkab.go.id/eproc4" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe"> LPSE</i></button></a>
 						</div>
 					</div>
 				</div>
@@ -107,8 +108,8 @@
 						<h2 class="accordion-header" id="flush-headingOne"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">Pengaduan</button></h2>
 						<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
 							<div class="accordion-body">
-								<a href="https://www.lapor.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe">Lapor</i></button></a>
-								<a href="https://data.madiunkab.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe">Satu Data Tingkat Kabupaten Madiun</i></button></a>
+								<a href="https://www.lapor.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe"> Lapor</i></button></a>
+								<a href="https://data.madiunkab.go.id/" target="_blank"><button type="button" class="btn btn-light"><i class="fa fa-globe"> Satu Data Tingkat Kabupaten Madiun</i></button></a>
 							</div>
 						</div>
 					</div>
@@ -117,6 +118,7 @@
 		</div>
 	</div>
 	</section>
+	{{-- END LAYANAN --}}
 	<br>
 	<!-- End Hero Section -->
 	<main id="main">

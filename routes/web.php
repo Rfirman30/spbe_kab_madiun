@@ -50,14 +50,6 @@ Route::get('/uker', function () {
     return view('profil.unitKerja');
 });
 
-Route::get('/administrasi', function () {
-    return view('layanan.administrasi');
-});
-
-Route::get('/public', function () {
-    return view('layanan.public');
-});
-
 Route::get('/peraturan', function () {
     return view('profil.peraturan');
 });
@@ -76,13 +68,8 @@ Route::get('/manajemen', function () {
 
 //admin
 Route::get('/admin', function () {
-    return view('admin.master');
-});
-
-Route::get('/dashboard', function () {
     return view('admin.layout.index');
 });
-
 
 //kebijakanAdmin
 Route::resource('/kebijakans', \App\Http\Controllers\KebijakanController::class);

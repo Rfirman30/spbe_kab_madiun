@@ -25,7 +25,7 @@ class KebijakanController extends Controller
      */
     public function create()
     {
-        return view('admin.kebijakan_admin.index');
+        return view('admin.kebijakan_admin.create');
     }
 
     /**

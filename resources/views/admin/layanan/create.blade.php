@@ -23,6 +23,10 @@
                             <input type="text" class="form-control" name="nama" placeholder="Isi Nama">
                         </div>
                         <div class="form-group">
+                            <label for="KATEGORI">Kategori</label>
+                            <input type="text" class="form-control" name="kategori" placeholder="Isi Kategori">
+                        </div>
+                        <div class="form-group">
                             <label for="ISI">Isi</label>
                             <input type="text" class="form-control" name="isi" placeholder="Isi Layanan">
                         </div>

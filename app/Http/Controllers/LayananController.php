@@ -25,7 +25,7 @@ class LayananController extends Controller
      */
     public function create()
     {
-        return view('admin.layanan.index');
+        return view('admin.layanan.create');
     }
 
     /**
@@ -35,6 +35,7 @@ class LayananController extends Controller
     {
         $request->validate([
             'nama' => 'required',
+            'kategori' => 'required',
             'isi' => 'required',
             'file' => 'required'
         ]);
@@ -44,6 +45,7 @@ class LayananController extends Controller
 
         Layanan::create([
             'nama' => $request->nama,
+            'kategori' => $request->kategori,
             'isi' => $request->isi,
             'file' => $fileName
         ]);

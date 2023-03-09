@@ -17,6 +17,7 @@
 			<tr>
 				<th>NO</th>
 				<th>NAMA</th>
+				<th>KATEGORI</th>
 				<th>ISI</th>
 				<th>FILE</th>
 				<th>AKSI</th>
@@ -27,6 +28,7 @@
 			<tr>
 				<td>{{ $loop->iteration }}</td>
                 <td>{{ $lyn->nama }}</td>
+                <td>{{ $lyn->kategori}}</td>
                 <td>{{ $lyn->isi }}</td>
                 <td>{{ $lyn->file }}</td>
 				<td>
