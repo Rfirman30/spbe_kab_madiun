@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Dashboard;
 
 use App\Http\Controllers\Controller;
+use App\Models\Berita;
 use App\Models\Kebijakan;
 use App\Models\Layanan;
 use App\Models\Manajemen;
@@ -40,5 +41,18 @@ class DashboardController extends Controller
     {
         $layanan = Layanan::with('link')->get();
         return view('layout.index', compact('layanan'));
+    }
+
+    public function beritaView()
+    {
+        $berita = Berita::where('status', 'publish')->orderBy('created_at', 'desc')->get();
+        return view('layout.berita', compact('berita'));
+    }
+
+    public function detailBeritaView($slug)
+    {
+        $berita = Berita::where('slug', $slug)->first();
+        $recent = Berita::orderBy('created_at', 'desc')->take(5)->get();
+        return view('detail.Dberita1', compact('berita', 'recent'));
     }
 }

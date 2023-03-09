@@ -15,17 +15,16 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form action="{{ route('berita.update', $berita->id) }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
                             <label for="NAMA">Judul</label>
-                            <input type="text" class="form-control" value="{{ $berita->judul }}" name="judul"
-                                placeholder="Isi Nama">
+                            <input type="text" class="form-control" name="judul" placeholder="Isi Nama">
                         </div>
                         <div class="form-group">
                             <label for="InputFile">Isi</label>
-                            <textarea name="isi" class="form-control" id="isi" cols="30" rows="10">{{ $berita->isi }}</textarea>
+                            <textarea name="isi" class="form-control" id="isi" cols="30" rows="10"></textarea>
                         </div>
                         <div class="form-group">
                             <label for="exampleFormControlFile1">Gambar</label>
@@ -33,8 +32,7 @@
                         </div>
                         <div class="form-group">
                             <label for="InputFile">Penulis</label>
-                            <input type="text" name="penulis" class="form-control" value="{{ $berita->penulis }}"
-                                name="penulis" placeholder="Isi Nama">
+                            <input type="text" name="penulis" class="form-control" name="penulis" placeholder="Isi Nama">
                         </div>
                     </div>
                     <!-- /.card-body -->

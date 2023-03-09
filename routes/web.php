@@ -22,15 +22,15 @@ Route::controller(DashboardController::class)->group(function () {
     Route::get('manajemen', 'managementView')->name('manajemen');
     Route::get('about', 'visiMisiView')->name('about');
     Route::get('/', 'homeView')->name('home');
+    Route::get('/berita', 'beritaView')->name('berita');
+    Route::get('/detail/{slug}', 'detailBeritaView')->name('detail.berita');
 });
 
 
 
 
 
-Route::get('/berita', function () {
-    return view('layout.berita');
-});
+
 
 Route::get('/layanan', function () {
     return view('layanan.layanan');
@@ -40,9 +40,7 @@ Route::get('/tugas', function () {
     return view('profil.tugasFungsi');
 });
 
-Route::get('/detail', function () {
-    return view('detail.Dberita1');
-});
+
 
 
 
@@ -67,7 +65,7 @@ Route::get('/detailProgres2', function () {
 //admin
 Route::get('/admin', function () {
     return view('admin.layout.index');
-});
+})->middleware('auth');
 
 //kebijakanAdmin
 Route::resource('/kebijakans', \App\Http\Controllers\KebijakanController::class);
@@ -93,6 +91,16 @@ Route::post('/visimisis/edit/store', [App\Http\Controllers\Admin\VisiMisiControl
 Route::get('/link-layanan', [App\Http\Controllers\Admin\LinkLayananController::class, 'index'])->name('link-layanan.index');
 Route::get('/link-layanan/create', [App\Http\Controllers\Admin\LinkLayananController::class, 'create'])->name('link-layanan.create');
 Route::post('/link-layanan/store', [App\Http\Controllers\Admin\LinkLayananController::class, 'store'])->name('link-layanan.store');
+
+//berita admin
+Route::get('/berita-admin', [App\Http\Controllers\Admin\BeritaController::class, 'index'])->name('berita.index');
+Route::get('/berita/create', [App\Http\Controllers\Admin\BeritaController::class, 'create'])->name('berita.create');
+Route::post('/berita/store', [App\Http\Controllers\Admin\BeritaController::class, 'store'])->name('berita.store');
+Route::get('/berita/edit/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'edit'])->name('berita.edit');
+Route::post('/berita/update/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'update'])->name('berita.update');
+Route::delete('/berita/delete/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'destroy'])->name('berita.destroy');
+Route::get('/berita/publish/{id}', [App\Http\Controllers\Admin\BeritaController::class, 'publish'])->name('berita.publish');
+
 
 //login
 Auth::routes();

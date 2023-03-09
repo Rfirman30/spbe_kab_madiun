@@ -11,6 +11,10 @@ use Ramsey\Uuid\Uuid;
 
 class TatakelolaController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     /**
      * Display a listing of the resource.
      */
