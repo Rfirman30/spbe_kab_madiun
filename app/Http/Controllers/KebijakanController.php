@@ -46,7 +46,7 @@ class KebijakanController extends Controller
             'file' => $fileName
         ]);
 
-        return redirect()->route('kebijakans')
+        return redirect()->route('kebijakans.index')
             ->with('success', 'Data Kebijakan Berhasil Disimpan');
     }
 
@@ -81,6 +81,6 @@ class KebijakanController extends Controller
     {
         $ar_kebijakan = Kebijakan::find($id);
         $ar_kebijakan->delete();
-        return redirect()->route('kebijakans');
+        return redirect()->route('kebijakans.index');
     }
 }

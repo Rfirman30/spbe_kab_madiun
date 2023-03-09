@@ -2,10 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Layanan;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\DB as LayananDB;
+use Ramsey\Uuid\Uuid;
 
 class LayananController extends Controller
 {
@@ -14,7 +15,7 @@ class LayananController extends Controller
      */
     public function index()
     {
-        $ar_layanan = LayananDB::table('layanans')->get();
+        $ar_layanan = Layanan::all();
 
         return view('admin.layanan.index', compact('ar_layanan'));
     }
@@ -24,7 +25,7 @@ class LayananController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.layanan.index');
     }
 
     /**
@@ -32,7 +33,23 @@ class LayananController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama' => 'required',
+            'isi' => 'required',
+            'file' => 'required'
+        ]);
+
+        $fileName = Uuid::uuid4() . '.' . $request->file('file')->extension();
+        $request->file('file')->move(public_path('storage/kebijakan'), $fileName);
+
+        Layanan::create([
+            'nama' => $request->nama,
+            'isi' => $request->isi,
+            'file' => $fileName
+        ]);
+
+        return redirect()->route('layanans.index')
+            ->with('success', 'Data Kebijakan Berhasil Disimpan');
     }
 
     /**
@@ -64,6 +81,8 @@ class LayananController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $ar_layanan = Layanan::find($id);
+        $ar_layanan->delete();
+        return redirect()->route('layanans.index');
     }
 }
