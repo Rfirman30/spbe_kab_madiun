@@ -11,8 +11,5 @@ class Tatakelola extends Model
 
     protected $table = "tatakelolas";
 
-    protected $fillable = [
-        'nama',
-        'file',
-    ];
+    protected $fillable = ['nama', 'file'];
 }

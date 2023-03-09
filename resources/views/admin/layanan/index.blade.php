@@ -11,7 +11,7 @@
 		</div>
 		<!-- /.card-header -->
 		<div class="card-body">
-			<a href="{{ route('layanans.create') }}" class="btn btn-md btn-success mb-3">TAMBAH LAYANAN</a>	<div class="card">
+			<a href="{{ route('layanans.create') }}" class="btn btn-md btn-success mb-3">TAMBAH LAYANAN</a>				<div class="card">
 			<table id="example1" class="table table-bordered table-striped">
 			<thead>
 			<tr>

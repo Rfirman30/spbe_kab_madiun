@@ -41,7 +41,7 @@ class LayananController extends Controller
         ]);
 
         $fileName = Uuid::uuid4() . '.' . $request->file('file')->extension();
-        $request->file('file')->move(public_path('storage/kebijakan'), $fileName);
+        $request->file('file')->move(public_path('storage/layanan'), $fileName);
 
         Layanan::create([
             'nama' => $request->nama,
@@ -51,7 +51,7 @@ class LayananController extends Controller
         ]);
 
         return redirect()->route('layanans.index')
-            ->with('success', 'Data Kebijakan Berhasil Disimpan');
+            ->with('success', 'Data Layanan Berhasil Disimpan');
     }
 
     /**

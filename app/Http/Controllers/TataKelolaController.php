@@ -2,10 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Tatakelola;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\DB as TataDB;
+use Ramsey\Uuid\Uuid;
+
 
 class TatakelolaController extends Controller
 {
@@ -14,7 +16,7 @@ class TatakelolaController extends Controller
      */
     public function index()
     {
-        $ar_tata = TataDB::table('tatakelolas')->get();
+        $ar_tata = Tatakelola::all();
 
         return view('admin.tatakelola.index', compact('ar_tata'));
     }
@@ -32,7 +34,21 @@ class TatakelolaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama' => 'required',
+            'file' => 'required'
+        ]);
+
+        $fileName = Uuid::uuid4() . '.' . $request->file('file')->extension();
+        $request->file('file')->move(public_path('storage/tatakelola'), $fileName);
+
+        Tatakelola::create([
+            'nama' => $request->nama,
+            'file' => $fileName
+        ]);
+
+        return redirect()->route('tatakelolas.index')
+            ->with('success', 'Data Tata Kelola Berhasil Disimpan');
     }
 
     /**
@@ -64,6 +80,8 @@ class TatakelolaController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $ar_tata = Tatakelola::find($id);
+        $ar_tata->delete();
+        return redirect()->route('tatakelolas.index');
     }
 }
