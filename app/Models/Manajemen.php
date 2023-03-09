@@ -8,4 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Manajemen extends Model
 {
     use HasFactory;
+
+    protected $table = 'manajemens';
+    protected $fillable = ['nama', 'file'];
 }
