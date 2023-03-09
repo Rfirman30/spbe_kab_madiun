@@ -39,12 +39,10 @@ class TatakelolaController extends Controller
             'file' => 'required'
         ]);
 
-        $fileName = Uuid::uuid4() . '.' . $request->file('file')->extension();
-        $request->file('file')->move(public_path('storage/tatakelola'), $fileName);
 
         Tatakelola::create([
             'nama' => $request->nama,
-            'file' => $fileName
+            'file' => $request->file
         ]);
 
         return redirect()->route('tatakelolas.index')

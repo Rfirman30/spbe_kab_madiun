@@ -15,9 +15,9 @@ class LayananController extends Controller
      */
     public function index()
     {
-        $ar_layanan = Layanan::all();
+        $layanans = Layanan::all();
 
-        return view('admin.layanan.index', compact('ar_layanan'));
+        return view('admin.layanan.index', compact('layanans'));
     }
 
     /**
@@ -34,25 +34,16 @@ class LayananController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama' => 'required',
-            'kategori' => 'required',
-            'isi' => 'required',
-            'file' => 'required'
+            'layanan' => 'required',
+            'type' => 'required',
         ]);
-
-        $fileName = Uuid::uuid4() . '.' . $request->file('file')->extension();
-        $request->file('file')->move(public_path('storage/layanan'), $fileName);
 
         Layanan::create([
-            'nama' => $request->nama,
-            'kategori' => $request->kategori,
-            'subkategori' => $request->subkategori,
-            'isi' => $request->isi,
-            'file' => $fileName
+            'layanan' => $request->layanan,
+            'type' => $request->type,
         ]);
 
-        return redirect()->route('layanans.index')
-            ->with('success', 'Data Layanan Berhasil Disimpan');
+        return redirect()->route('layanans.index')->with('success', 'Layanan berhasil ditambahkan');
     }
 
     /**
@@ -84,8 +75,5 @@ class LayananController extends Controller
      */
     public function destroy(string $id)
     {
-        $ar_layanan = Layanan::find($id);
-        $ar_layanan->delete();
-        return redirect()->route('layanans.index');
     }
 }

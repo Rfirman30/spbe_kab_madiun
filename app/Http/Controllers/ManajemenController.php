@@ -24,7 +24,7 @@ class ManajemenController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.manajemen.create');
     }
 
     /**
@@ -32,7 +32,14 @@ class ManajemenController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nama' => 'required|string',
+            'file' => 'required|string',
+        ]);
+
+        Manajemen::create($request->all());
+
+        return redirect()->route('manajemens.index')->with('success', 'Data Kebijakan Berhasil Disimpan');
     }
 
     /**
@@ -64,6 +71,8 @@ class ManajemenController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $management = Manajemen::find($id);
+        $management->delete();
+        return redirect()->route('manajemens.index')->with('success', 'Data Kebijakan Berhasil Dihapus');
     }
 }

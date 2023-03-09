@@ -10,5 +10,15 @@ class Layanan extends Model
     use HasFactory;
 
     protected $table = 'layanans';
-    protected $fillable = ['nama', 'kategori', 'subkategori', 'isi', 'file'];
+    protected $guarded = [];
+
+    /**
+     * Get all of the link for the Layanan
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
+     */
+    public function link()
+    {
+        return $this->hasMany(LayananLink::class, 'layanan_id', 'id');
+    }
 }

@@ -19,32 +19,16 @@
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="NAMA">Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Isi Nama">
+                            <label for="NAMA">Nama Layanan</label>
+                            <input type="text" class="form-control" name="layanan" placeholder="Isi Nama Layanan">
                         </div>
                         <div class="form-group">
-                            <label for="KATEGORI">Kategori</label>
-                            <input type="text" class="form-control" name="kategori" placeholder="Isi Kategori">
-                        </div>
-                        <div class="form-group">
-                            <label for="SUBKATEGORI">SubKategori</label>
-                            <input type="text" class="form-control" name="subkategori" placeholder="Isi SubKategori">
-                        </div>
-                        <div class="form-group">
-                            <label for="ISI">Isi</label>
-                            <input type="text" class="form-control" name="isi" placeholder="Isi Layanan">
-                        </div>
-                        <div class="form-group">
-                            <label for="InputFile">Masukkan File</label>
-                            <div class="input-group">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" name="file" id="exampleInputFile">
-                                    <label class="custom-file-label" for="exampleInputFile">Pilih File</label>
-                                </div>
-                                <div class="input-group-append">
-                                    <span class="input-group-text">Upload</span>
-                                </div>
-                            </div>
+                            <label for="exampleFormControlSelect1">Pilih Kategory</label>
+                            <select class="form-control" name="type" id="exampleFormControlSelect1">
+                                <option selected disabled>Pilih Kategoori</option>
+                                <option value="Public">Public</option>
+                                <option value="Administrasi">Administrasi</option>
+                            </select>
                         </div>
                     </div>
                     <!-- /.card-body -->

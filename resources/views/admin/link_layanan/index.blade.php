@@ -7,31 +7,32 @@
         </div>
         <br>
         <div class="card-header">
-            <h3 class="card-title">Data Layanan</h3>
+            <h3 class="card-title">Data Link Layanan</h3>
         </div>
         <!-- /.card-header -->
         <div class="card-body">
-            <a href="{{ route('layanans.create') }}" class="btn btn-md btn-success mb-3">TAMBAH LAYANAN</a>
+            <a href="{{ route('link-layanan.create') }}" class="btn btn-md btn-success mb-3">TAMBAH Link LAYANAN</a>
             <div class="card">
                 <table id="example1" class="table table-bordered table-striped">
                     <thead>
                         <tr>
                             <th>NO</th>
-                            <th>NAMA</th>
-                            <th>Tipe</th>
+                            <th>Kategoti Layanan</th>
+                            <th>Nama Layanan</th>
+                            <th>Link</th>
                             <th>AKSI</th>
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach ($layanans as $lyn)
+                        @foreach ($link_layanan as $lyn)
                             <tr>
                                 <td>{{ $loop->iteration }}</td>
-                                <td>{{ $lyn->layanan }}</td>
-                                <td>{{ $lyn->type }}</td>
+                                <td>{{ $lyn->layanan->layanan }}</td>
+                                <td>{{ $lyn->name }}</td>
+                                <td>{{ $lyn->link }}</td>
                                 <td>
-                                    <form action="{{ route('layanans.destroy', $lyn->id) }}" method="POST">
-                                        <a href="{{ route('layanans.show', $lyn->id) }}" class="btn btn-info"
-                                            title="Detail Data">
+                                    <form action="" method="POST">
+                                        <a href="" class="btn btn-info" title="Detail Data">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
                                                 <path
@@ -40,8 +41,7 @@
                                                     d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
                                             </svg>
                                         </a>
-                                        <a href="{{ route('layanans.edit', $lyn->id) }}" class="btn btn-warning"
-                                            title="Edit detail">
+                                        <a href="" class="btn btn-warning" title="Edit detail">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                                 fill="currentColor" class="bi bi-pencil-square" viewBox="0 0 16 16">
                                                 <path

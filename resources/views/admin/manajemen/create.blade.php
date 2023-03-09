@@ -15,7 +15,7 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form action="{{ route('kebijakans.store') }}" method="POST">
+                <form action="{{ route('manajemens.store') }}" method="POST">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">

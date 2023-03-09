@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Dashboard\DashboardController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
@@ -14,17 +15,18 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('layout.index');
+
+Route::controller(DashboardController::class)->group(function () {
+    Route::get('kebijakan', 'kebijakanView')->name('kebijakan.dashboard');
+    Route::get('tata-kelola', 'tataKelolaView')->name('tata-kelola');
+    Route::get('manajemen', 'managementView')->name('manajemen');
+    Route::get('about', 'visiMisiView')->name('about');
+    Route::get('/', 'homeView')->name('home');
 });
 
-Route::get('/kebijakan', function () {
-    return view('layout.kebijakan');
-});
 
-Route::get('/about', function () {
-    return view('profil.visi');
-});
+
+
 
 Route::get('/berita', function () {
     return view('layout.berita');
@@ -42,9 +44,7 @@ Route::get('/detail', function () {
     return view('detail.Dberita1');
 });
 
-Route::get('/tata', function () {
-    return view('layout.tatakelola');
-});
+
 
 Route::get('/uker', function () {
     return view('profil.unitKerja');
@@ -62,9 +62,7 @@ Route::get('/detailProgres2', function () {
     return view('detailProgres.DProgres2');
 });
 
-Route::get('/manajemen', function () {
-    return view('layout.manajemen');
-});
+
 
 //admin
 Route::get('/admin', function () {
@@ -75,7 +73,7 @@ Route::get('/admin', function () {
 Route::resource('/kebijakans', \App\Http\Controllers\KebijakanController::class);
 
 //manajemenAdmin
-Route::resource('/manajemens', \App\Http\Controllers\KebijakanController::class);
+Route::resource('/manajemens', \App\Http\Controllers\ManajemenController::class);
 
 //layanan admin
 Route::resource('/layanans', \App\Http\Controllers\LayananController::class);
@@ -85,6 +83,16 @@ Route::resource('/tatakelolas', \App\Http\Controllers\TataKelolaController::clas
 
 //Footer admin
 Route::resource('/footers', \App\Http\Controllers\FooterController::class);
+
+//VisiMisi
+Route::get('/visimisis', [App\Http\Controllers\Admin\VisiMisiController::class, 'index'])->name('visimisis.index');
+Route::get('/visimisis/edit', [App\Http\Controllers\Admin\VisiMisiController::class, 'editView'])->name('visimisis.edit');
+Route::post('/visimisis/edit/store', [App\Http\Controllers\Admin\VisiMisiController::class, 'edit'])->name('visimisis.update');
+
+//link Layanan
+Route::get('/link-layanan', [App\Http\Controllers\Admin\LinkLayananController::class, 'index'])->name('link-layanan.index');
+Route::get('/link-layanan/create', [App\Http\Controllers\Admin\LinkLayananController::class, 'create'])->name('link-layanan.create');
+Route::post('/link-layanan/store', [App\Http\Controllers\Admin\LinkLayananController::class, 'store'])->name('link-layanan.store');
 
 //login
 Auth::routes();

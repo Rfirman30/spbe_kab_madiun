@@ -15,7 +15,7 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form action="{{ route('tatakelolas.store') }}" method="POST" enctype="multipart/form-data">
+                <form action="{{ route('tatakelolas.store') }}" method="POST">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
@@ -23,8 +23,9 @@
                             <input type="text" class="form-control" name="nama" placeholder="Isi Nama">
                         </div>
                         <div class="form-group">
-                            <label for="InputFile">Masukkan File</label>
-                            <div class="input-group">
+                            <label for="InputFile">Masukkan Link File</label>
+                            <input type="text" class="form-control" name="file" placeholder="Isi Link File">
+                            {{-- <div class="input-group">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" name="file" id="exampleInputFile">
                                     <label class="custom-file-label" for="exampleInputFile">Pilih File</label>
@@ -32,7 +33,7 @@
                                 <div class="input-group-append">
                                     <span class="input-group-text">Upload</span>
                                 </div>
-                            </div>
+                            </div> --}}
                         </div>
                     </div>
                     <!-- /.card-body -->

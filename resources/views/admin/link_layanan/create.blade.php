@@ -15,25 +15,25 @@
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form action="{{ route('kebijakans.store') }}" method="POST">
+                <form action="{{ route('link-layanan.store') }}" method="POST" enctype="multipart/form-data">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="NAMA">Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Isi Nama">
+                            <label for="exampleFormControlSelect1">Pilih Kategory</label>
+                            <select class="form-control" name="layanan_id" id="exampleFormControlSelect1">
+                                <option selected disabled>Pilih Layanan</option>
+                                @foreach ($layanans as $item)
+                                    <option value="{{ $item->id }}">{{ $item->layanan }}</option>
+                                @endforeach
+                            </select>
                         </div>
                         <div class="form-group">
-                            <label for="InputFile">Masukkan Link File</label>
-                            <input type="text" class="form-control" name="file" placeholder="Isi Link File">
-                            {{-- <div class="input-group">
-                                <div class="custom-file">
-                                    <input type="file" class="custom-file-input" name="file" id="exampleInputFile">
-                                    <label class="custom-file-label" for="exampleInputFile">Pilih File</label>
-                                </div>
-                                <div class="input-group-append">
-                                    <span class="input-group-text">Upload</span>
-                                </div>
-                            </div> --}}
+                            <label for="NAMA">Nama Layanan</label>
+                            <input type="text" class="form-control" name="nama" placeholder="Isi Nama Layanan">
+                        </div>
+                        <div class="form-group">
+                            <label for="NAMA">link Layanan</label>
+                            <input type="text" class="form-control" name="link" placeholder="Isi Link Layanan">
                         </div>
                     </div>
                     <!-- /.card-body -->

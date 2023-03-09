@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Kebijakan;
+use App\Models\Manajemen;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -15,7 +16,7 @@ class KebijakanController extends Controller
      */
     public function index()
     {
-        $ar_kebijakan = Kebijakan::all();
+        $ar_kebijakan = Manajemen::all();
 
         return view('admin.kebijakan_admin.index', compact('ar_kebijakan'));
     }
@@ -38,12 +39,9 @@ class KebijakanController extends Controller
             'file' => 'required'
         ]);
 
-        $fileName = Uuid::uuid4() . '.' . $request->file('file')->extension();
-        $request->file('file')->move(public_path('storage/kebijakan'), $fileName);
-
         Kebijakan::create([
             'nama' => $request->nama,
-            'file' => $fileName
+            'file' => $request->file
         ]);
 
         return redirect()->route('kebijakans.index')

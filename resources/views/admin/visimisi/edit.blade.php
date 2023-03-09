@@ -11,20 +11,21 @@
         <div class="card-body">
             <div class="card card-primary">
                 <div class="card-header">
-                    <h3 class="card-title">Tambah Data</h3>
+                    <h3 class="card-title">Edit Visi Misi</h3>
                 </div>
                 <!-- /.card-header -->
                 <!-- form start -->
-                <form action="{{ route('kebijakans.store') }}" method="POST">
+                <form action="{{ route('visimisis.update') }}" method="POST">
                     @csrf
                     <div class="card-body">
                         <div class="form-group">
-                            <label for="NAMA">Nama</label>
-                            <input type="text" class="form-control" name="nama" placeholder="Isi Nama">
+                            <label for="NAMA">Masukan Visi</label>
+                            <textarea name="visi" id="visi" cols="30" rows="10">{{ $data->visi }}</textarea>
                         </div>
                         <div class="form-group">
-                            <label for="InputFile">Masukkan Link File</label>
-                            <input type="text" class="form-control" name="file" placeholder="Isi Link File">
+                            <label for="InputFile">Masukkan Misi</label>
+                            <textarea name="misi" id="misi" cols="30" rows="10">{{ $data->misi }}</textarea>
+
                             {{-- <div class="input-group">
                                 <div class="custom-file">
                                     <input type="file" class="custom-file-input" name="file" id="exampleInputFile">
@@ -45,13 +46,12 @@
             </div>
         </div>
         <!-- /.card -->
-
-
-
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+
+    <script src="https://cdn.ckeditor.com/4.20.2/standard/ckeditor.js"></script>
 
     <script>
         function myallert() {
@@ -67,5 +67,8 @@
                     }
                 });
         }
+
+        CKEDITOR.replace('visi');
+        CKEDITOR.replace('misi');
     </script>
 @endsection
