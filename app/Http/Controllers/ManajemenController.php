@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Manajemen;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
@@ -13,7 +14,9 @@ class ManajemenController extends Controller
      */
     public function index()
     {
-        //
+        $ar_manajemen = Manajemen::all();
+
+        return view('admin.manajemen.index', compact('ar_manajemen'));
     }
 
     /**

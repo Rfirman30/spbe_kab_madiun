@@ -74,6 +74,9 @@ Route::get('/admin', function () {
 //kebijakanAdmin
 Route::resource('/kebijakans', \App\Http\Controllers\KebijakanController::class);
 
+//manajemenAdmin
+Route::resource('/manajemens', \App\Http\Controllers\KebijakanController::class);
+
 //layanan admin
 Route::resource('/layanans', \App\Http\Controllers\LayananController::class);
 
