@@ -13,6 +13,8 @@ return new class extends Migration
     {
         Schema::create('manajemens', function (Blueprint $table) {
             $table->id();
+            $table->string('nama');
+            $table->string('file');
             $table->timestamps();
         });
     }
