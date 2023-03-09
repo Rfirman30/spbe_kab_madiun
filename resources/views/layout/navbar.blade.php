@@ -83,9 +83,6 @@
 		<li>
 			<a href="/berita">Berita</a>
 		</li>
-		<li>
-			<a href="#contact">Hubungi Kami</a>
-		</li>
 		{{-- <li class="dropdown">
 			<a href="#"><span>Drop Down</span><i class="bi bi-chevron-down dropdown-indicator"></i></a>
 			<ul>

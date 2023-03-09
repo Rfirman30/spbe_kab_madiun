@@ -235,8 +235,7 @@
 			<!-- End Service Item --></div>
 	</div>
 	</section>
-	<!-- End Pricing Section -->
-	 --}} 
+	<!-- End Pricing Section --> 
 	<!-- ======= Frequently Asked Questions Section ======= -->
 	<section id="faq" class="faq">
 	<div class="container" data-aos="fade-up">
